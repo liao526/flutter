@@ -29,6 +29,7 @@ dependencies:
         url: https://github.com/CarSmallGuo/Flare-Flutter.git
         path: flare_flutter
         ref: master
+  fluttertoast: ^3.1.0
 
 dev_dependencies:
   flutter_test:
@@ -49,9 +50,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - resources/file/flare_flutter_logo_.flr
-    - resources/images/welcome.png
-    - resources/images/tjzh_dibu_bj.png
+    - resources/images/top_bar_user_icon.png
     - resources/images/update_bg_top.png
+    - resources/images/bili_drawerbg_logined.png
+    - resources/images/ic_qrscan.png
+    - resources/images/def_user_icon.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

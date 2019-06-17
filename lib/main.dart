@@ -5,9 +5,11 @@ import 'package:flutter_wanandroid/page/main_page.dart';
 import 'package:flutter_wanandroid/redux/app_state_.dart';
 import 'package:flutter_wanandroid/redux/user_info_redux.dart';
 import 'package:redux/redux.dart';
+import 'constant/colors.dart';
 import 'model/user.dart';
 
 void main() {
+
   ///全局异常捕获
   runZoned(() => runApp(App()), onError: (Object obj, StackTrace t) {
     print(obj);
@@ -24,18 +26,11 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.light(),
+      theme: ThemeData(primaryColor: AppColors.MAIN_COLORS),
       routes: <String, WidgetBuilder>{
         LaunchPage.routesName: (context) => LaunchPage(),
         MainPage.routesName:(context)=> MainPage(),
       },
     );
-  }
-}
-
-class MainWidget extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center();
   }
 }

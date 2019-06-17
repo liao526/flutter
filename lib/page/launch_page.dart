@@ -8,6 +8,10 @@ class LaunchPage extends StatelessWidget {
     Navigator.pushReplacementNamed(context, MainPage.routesName);
   }
 
+
+
+ /// flutter_driver from sdk is forbidden.
+///  So, because ninghao_flutter depends on flutter_driver any from sdk, version solving failed.
   @override
   Widget build(BuildContext context) {
     Future.delayed(Duration(milliseconds: 1 * 2000), () => goMainPage(context));
